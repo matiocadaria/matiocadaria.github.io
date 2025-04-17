@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8dc; /* Light beige for a warm tone */
+    color: #444; /* Darker gray for better readability */
+}
+
+header {
+    background-color: #ff6347; /* Tomato red for a vibrant header */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    color: #fff; /* White text for contrast */
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffd700; /* Golden yellow for hover effect */
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #ff6347; /* Match footer with header */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add animation for headers */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header h1, main h2 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Style for images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
